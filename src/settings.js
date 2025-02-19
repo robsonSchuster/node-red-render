@@ -1,16 +1,15 @@
 module.exports = {
   uiPort: process.env.PORT || 1880,
-  flowFile: '/opt/render/project/src/flows/flows.json',
-  userDir: '/opt/render/project/src/flows',
+  flowFile: "/opt/render/project/src/flows/flows.json",
+  userDir: "/opt/render/project/src/flows",
   credentialSecret: "suaSenhaSegura",
-  // Adicione esta seção 👇
-  httpStatic: '/opt/render/project/src/flows', // Pasta a ser exposta
-  httpAdminRoot: '/admin', // Altere a rota padrão do admin para evitar conflitos
+  httpStatic: "/opt/render/project/src/flows", // 👈 Pasta exposta
+  httpAdminRoot: "/admin", // Evita conflito com a rota estática
   logging: {
     console: {
       level: "info",
       metrics: false,
-      audit: false
-    }
-  }
+      audit: false,
+    },
+  },
 };
