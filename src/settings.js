@@ -3,7 +3,7 @@ module.exports = {
   flowFile: '/opt/render/project/src/flows/flows.json',
   userDir: '/opt/render/project/src/flows',
   credentialSecret: "suaSenhaSegura",
-  httpStatic: '/opt/render/project/src/flows', // Arquivos estáticos em /flows/*
+  httpStatic: '/opt/render/project/src/flows', // Pasta exposta
   httpAdminRoot: '/admin', // Editor em /admin
   logging: {
     console: {
