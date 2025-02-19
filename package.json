@@ -2,7 +2,7 @@
   "name": "node-red-render",
   "version": "1.0.0",
   "scripts": {
-    "start": "node-red -s ./src/settings.js -p $PORT"
+    "start": "node-red -s /opt/render/project/src/src/settings.js -p $PORT"
   },
   "dependencies": {
     "node-red": "^4.0.8",
