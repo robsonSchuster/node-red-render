@@ -4,12 +4,12 @@ module.exports = {
   userDir: '/opt/render/project/src/flows',
   credentialSecret: "suaSenhaSegura",
   httpStatic: [
-    {
-      path: '/flows',  // URL para acessar os arquivos (ex: /flows/flows.json)
-      root: '/opt/render/project/src/flows' // Caminho absoluto no servidor
+    { 
+      path: '/flows', 
+      root: '/opt/render/project/src/flows' 
     }
   ],
-  httpAdminRoot: '/admin', // Editor em /admin
+  httpAdminRoot: '/admin',
   logging: {
     console: {
       level: "info",
