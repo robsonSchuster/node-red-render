@@ -1,11 +1,8 @@
 module.exports = {
   uiPort: process.env.PORT || 1880,
-  flowFile: '/opt/render/project/src/flows/flows.json',
+  flowFile: '/opt/render/project/src/flows/flows.json', // Caminho absoluto no Render
   userDir: '/opt/render/project/src/flows',
-  credentialSecret: "suaSenhaSegura",
-  // Adicione esta seção 👇
-  httpStatic: '/opt/render/project/src/flows', // Pasta a ser exposta
-  httpAdminRoot: '/admin', // Altere a rota padrão do admin para evitar conflitos
+  credentialSecret: "suaSenhaSuperSecreta", // Altere para sua senha!
   logging: {
     console: {
       level: "info",
