@@ -3,13 +3,9 @@ module.exports = {
   flowFile: '/opt/render/project/src/flows/flows.json',
   userDir: '/opt/render/project/src/flows',
   credentialSecret: "suaSenhaSegura",
-  httpStatic: [
-    { 
-      path: '/flows', 
-      root: '/opt/render/project/src/flows' 
-    }
-  ],
-  httpAdminRoot: '/admin',
+  // Adicione esta seção 👇
+  httpStatic: '/opt/render/project/src/flows', // Pasta a ser exposta
+  httpAdminRoot: '/admin', // Altere a rota padrão do admin para evitar conflitos
   logging: {
     console: {
       level: "info",
